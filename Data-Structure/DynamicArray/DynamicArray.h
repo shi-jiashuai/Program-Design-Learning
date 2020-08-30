@@ -7,9 +7,9 @@
 //动态数组结构体
 struct dynamicArray
 {
-	void** pAddr; //维护真实在堆区创建的数组的指针
-	int m_capacity;  // 数组容量
-	int m_size;   //数组大小
+    void** pAddr; //维护真实在堆区创建的数组的指针
+    int m_capacity;  // 数组容量
+    int m_size;   //数组大小
 };
 
 //初始化数组
