@@ -1,6 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<iostream>
-#include<vector>
 #include "MyArray.h"
 using namespace std;
 
@@ -42,32 +41,6 @@ void test01()
     cout << arr[0] << endl;
 }
 
-
-class Solution {
-public:
-        vector<int> shuffle(vector<int>& nums, int n) {
-
-        // 使用双指针法
-        int halfSize = nums.size() * 0.5;
-        //int* pointer1 = nums.begin();
-        //int* pointer2 = &nums[halfSize];
-
-        vector<int> ret;
-
-        auto iterator1 = nums.begin();
-        std::vector<int>::iterator iterator2 = iterator1 + halfSize;
-
-        while (iterator2 < nums.end())
-        {
-            ret.push_back(*iterator1);
-            ret.push_back(*iterator2);
-            ++iterator1;
-            ++iterator2;
-        }
-
-        return ret;
-    }
-};
 int main() 
 {
     test01();
